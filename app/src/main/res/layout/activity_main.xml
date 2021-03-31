@@ -33,16 +33,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="private Name"
-                    android:inputType="textPersonName" />
-
-                <EditText
-                    android:id="@+id/editTextTextPersonName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="last Name"
+                    android:hint="Student name"
                     android:inputType="textPersonName" />
 
             </LinearLayout>
@@ -85,19 +76,38 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Switch
-                    android:id="@+id/switch1"
-                    android:layout_width="82dp"
-                    android:layout_height="40dp"
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Did you Vaccinate?" />
+                    android:text="Did you vaccinate?" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="vaccination place"
+                    android:inputType="textPersonName" />
 
                 <Space
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1" />
-
-
             </LinearLayout>
 
             <Space
@@ -107,7 +117,50 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"></LinearLayout>
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextDate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="vaccination date"
+                    android:inputType="date" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="submit" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2nd vaccine" />
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
