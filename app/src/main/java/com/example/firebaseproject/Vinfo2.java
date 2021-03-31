@@ -1,15 +1,15 @@
 package com.example.firebaseproject;
 
-public class vaccineInfo {
-
-    private String loc;
+public class Vinfo2 {
     private int date;
+    private String loc;
 
-    public vaccineInfo(){}
-    public vaccineInfo(String loc,int date){
-        this.loc=loc;
+    public Vinfo2(){}
+    public Vinfo2(int date, String loc){
         this.date=date;
+        this.loc=loc;
     }
+
     public String getLoc(){ return loc; }
 
     public void setLoc(String loc){ this.loc=loc; }
