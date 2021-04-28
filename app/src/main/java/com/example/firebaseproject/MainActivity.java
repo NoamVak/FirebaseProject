@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         stuGrade.setOnItemSelectedListener(this);
 
+
         adp = new ArrayAdapter<String>(this,
                 R.layout.support_simple_spinner_dropdown_item,arr);
         stuGrade.setAdapter(adp);
@@ -67,7 +68,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public void vacAct(View view) {
         Intent in = new Intent(this, VaccineData.class);
-        in.putExtra("name", strName);
         startActivity(in);
 
     }
